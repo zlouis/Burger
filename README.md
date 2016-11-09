@@ -3,4 +3,4 @@ Currently the application works on localhost machine, however it does not deploy
 
 heroku link: https://mighty-reaches-22169.herokuapp.com/
 
-I linked the database to JAWSDB and followed the documentation and still getting errors.
+I linked the database to JAWSDB and followed the documentation and still getting errors. Error log included in text file.
