@@ -1,28 +1,36 @@
+var Sequelize = require('sequelize'), connection;
+if (process.env.JAWSDB_URL) {
+  connection = new Sequelize(process.env.JAWSDB_URL);
+} else {
+  connection = new Sequelize('burgers_db', 'root', 'password', {
+    host: 'localhost',
+    dialect: 'mysql',
+    port: '3000'
+  })
+}
+
 var express = require('express');
-var methOver = require('method-override');
 var bodyParser = require('body-parser');
+var methodOverride = require('method-override');
+
 var app = express();
 
-app.use(express.static(process.cwd() + "/public"));
+// Serve static content for the app from the "public" directory in the application directory.
+app.use(express.static(process.cwd() + '/public'));
 
 app.use(bodyParser.urlencoded({
   extended: false
 }));
-
-app.use(methOver('_method'));
+// override with POST having ?_method=DELETE
+app.use(methodOverride('_method'));
 var exphbs = require('express-handlebars');
 app.engine('handlebars', exphbs({
   defaultLayout: 'main'
 }));
-
 app.set('view engine', 'handlebars');
 
 var routes = require('./controllers/burgers_controller.js');
-
 app.use('/', routes);
 
-var port = process.env.PORT || 3000; 
-
-app.listen(port, function(){
-  console.log("listening on port "+port);
-});
+var port = process.env.PORT || 3000;
+app.listen(port);
