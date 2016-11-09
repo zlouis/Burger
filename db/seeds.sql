@@ -1,4 +1,3 @@
-
 INSERT INTO burgers (burger_name) VALUES ('Bachi Burger');
 INSERT INTO burgers (burger_name) VALUES ('Brindle Burger');
 INSERT INTO burgers (burger_name) VALUES ('Americana Burger');
@@ -17,7 +16,7 @@ INSERT INTO menu (item) VALUES ('Kua'Aina Burger');
 
 INSERT INTO menu (item, entree) VALUES ('Waffle Fries', 0);
 INSERT INTO menu (item, entree) VALUES ('Onion Rings', 0);
-INSERT INTO menu (item, entree) VALUES ('Onion Rings', 0);
+INSERT INTO menu (item, entree) VALUES ('Cole Slaw & House Fries', 0);
 INSERT INTO menu (item, entree) VALUES ('Chocolate Mint Milk Shake', 0);
 INSERT INTO menu (item, entree) VALUES ('Vanilla Milk Shake', 0);
 INSERT INTO menu (item, entree) VALUES ('Blackberry Milk Shake', 0);
