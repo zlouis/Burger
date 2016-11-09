@@ -1,0 +1,143 @@
+2016-11-09T22:25:26.318213+00:00 heroku[api]: Enable Logplex by jiannchyao@gmail.com
+2016-11-09T22:25:26.318213+00:00 heroku[api]: Release v2 created by jiannchyao@gmail.com
+2016-11-09T22:25:58.968204+00:00 heroku[api]: Attach JAWSDB (@ref:jawsdb-corrugated-14205) by jiannchyao@gmail.com
+2016-11-09T22:25:58.968301+00:00 heroku[api]: Release v3 created by jiannchyao@gmail.com
+2016-11-09T22:27:46.549721+00:00 heroku[api]: Scaled to web@1:Free by jiannchyao@gmail.com
+2016-11-09T22:27:46.552205+00:00 heroku[api]: Deploy 4d6a73a by jiannchyao@gmail.com
+2016-11-09T22:27:46.552274+00:00 heroku[api]: Release v4 created by jiannchyao@gmail.com
+2016-11-09T22:27:47.073847+00:00 heroku[slug-compiler]: Slug compilation started
+2016-11-09T22:27:47.073857+00:00 heroku[slug-compiler]: Slug compilation finished
+2016-11-09T22:27:48.884314+00:00 heroku[web.1]: Starting process with command `npm start`
+2016-11-09T22:27:51.056366+00:00 app[web.1]:
+2016-11-09T22:27:51.056378+00:00 app[web.1]: > burger@1.0.0 start /app
+2016-11-09T22:27:51.056379+00:00 app[web.1]: > node server.js
+2016-11-09T22:27:51.056380+00:00 app[web.1]:
+2016-11-09T22:27:51.656614+00:00 app[web.1]: connected as id 53879
+2016-11-09T22:27:52.515176+00:00 heroku[web.1]: State changed from starting to up
+2016-11-09T22:28:05.009775+00:00 app[web.1]: /app/node_modules/mysql/lib/protocol/Parser.js:78
+2016-11-09T22:28:05.009787+00:00 app[web.1]:         throw err; // Rethrow non-MySQL errors
+2016-11-09T22:28:05.009789+00:00 app[web.1]:
+2016-11-09T22:28:05.009788+00:00 app[web.1]:         ^
+2016-11-09T22:28:05.009790+00:00 app[web.1]: Error: ER_NO_SUCH_TABLE: Table 'e9bn5t2j2f86mzqt.burgers' doesn't exist
+2016-11-09T22:28:05.009791+00:00 app[web.1]:     at Query.Sequence._packetToError (/app/node_modules/mysql/lib/protocol/sequences/Sequence.js:52:14)
+2016-11-09T22:28:05.009792+00:00 app[web.1]:     at Query.ErrorPacket (/app/node_modules/mysql/lib/protocol/sequences/Query.js:83:18)
+2016-11-09T22:28:05.009793+00:00 app[web.1]:     at Protocol._parsePacket (/app/node_modules/mysql/lib/protocol/Protocol.js:280:23)
+2016-11-09T22:28:05.009794+00:00 app[web.1]:     at Protocol.write (/app/node_modules/mysql/lib/protocol/Protocol.js:39:16)
+2016-11-09T22:28:05.009793+00:00 app[web.1]:     at Parser.write (/app/node_modules/mysql/lib/protocol/Parser.js:74:12)
+2016-11-09T22:28:05.009795+00:00 app[web.1]:     at Socket.<anonymous> (/app/node_modules/mysql/lib/Connection.js:109:28)
+2016-11-09T22:28:05.009795+00:00 app[web.1]:     at emitOne (events.js:90:13)
+2016-11-09T22:28:05.009796+00:00 app[web.1]:     at Socket.emit (events.js:182:7)
+2016-11-09T22:28:05.009797+00:00 app[web.1]:     at readableAddChunk (_stream_readable.js:153:18)
+2016-11-09T22:28:05.009798+00:00 app[web.1]:     at Socket.Readable.push (_stream_readable.js:111:10)
+2016-11-09T22:28:05.009798+00:00 app[web.1]:     at TCP.onread (net.js:534:20)
+2016-11-09T22:28:05.009799+00:00 app[web.1]:     --------------------
+2016-11-09T22:28:05.009800+00:00 app[web.1]:     at Protocol._enqueue (/app/node_modules/mysql/lib/protocol/Protocol.js:141:48)
+2016-11-09T22:28:05.009800+00:00 app[web.1]:     at Connection.query (/app/node_modules/mysql/lib/Connection.js:214:25)
+2016-11-09T22:28:05.009801+00:00 app[web.1]:     at Object.orm.selectAll (/app/config/orm.js:7:16)
+2016-11-09T22:28:05.009801+00:00 app[web.1]:     at Object.burger.selectAll (/app/models/burger.js:5:9)
+2016-11-09T22:28:05.009802+00:00 app[web.1]:     at /app/controllers/burgers_controller.js:12:10
+2016-11-09T22:28:05.009803+00:00 app[web.1]:     at Layer.handle [as handle_request] (/app/node_modules/express/lib/router/layer.js:95:5)
+2016-11-09T22:28:05.009803+00:00 app[web.1]:     at next (/app/node_modules/express/lib/router/route.js:131:13)
+2016-11-09T22:28:05.009804+00:00 app[web.1]:     at Route.dispatch (/app/node_modules/express/lib/router/route.js:112:3)
+2016-11-09T22:28:05.009805+00:00 app[web.1]:     at Layer.handle [as handle_request] (/app/node_modules/express/lib/router/layer.js:95:5)
+2016-11-09T22:28:05.009806+00:00 app[web.1]:     at /app/node_modules/express/lib/router/index.js:277:22
+2016-11-09T22:28:05.009806+00:00 app[web.1]:     at Function.process_params (/app/node_modules/express/lib/router/index.js:330:12)
+2016-11-09T22:28:05.009807+00:00 app[web.1]:     at next (/app/node_modules/express/lib/router/index.js:271:10)
+2016-11-09T22:28:05.009808+00:00 app[web.1]:     at Function.handle (/app/node_modules/express/lib/router/index.js:176:3)
+2016-11-09T22:28:05.009808+00:00 app[web.1]:     at router (/app/node_modules/express/lib/router/index.js:46:12)
+2016-11-09T22:28:05.009810+00:00 app[web.1]:     at trim_prefix (/app/node_modules/express/lib/router/index.js:312:13)
+2016-11-09T22:28:05.021440+00:00 app[web.1]:
+2016-11-09T22:28:05.028835+00:00 app[web.1]: npm ERR! Linux 3.13.0-100-generic
+2016-11-09T22:28:05.009809+00:00 app[web.1]:     at Layer.handle [as handle_request] (/app/node_modules/express/lib/router/layer.js:95:5)
+2016-11-09T22:28:05.029441+00:00 app[web.1]: npm ERR! node v5.11.1
+2016-11-09T22:28:05.029840+00:00 app[web.1]: npm ERR! npm  v3.8.6
+2016-11-09T22:28:05.029213+00:00 app[web.1]: npm ERR! argv "/app/.heroku/node/bin/node" "/app/.heroku/node/bin/npm" "start"
+2016-11-09T22:28:05.030420+00:00 app[web.1]: npm ERR! burger@1.0.0 start: `node server.js`
+2016-11-09T22:28:05.030522+00:00 app[web.1]: npm ERR! Exit status 1
+2016-11-09T22:28:05.030640+00:00 app[web.1]: npm ERR!
+2016-11-09T22:28:05.030748+00:00 app[web.1]: npm ERR! Failed at the burger@1.0.0 start script 'node server.js'.
+2016-11-09T22:28:05.030131+00:00 app[web.1]: npm ERR! code ELIFECYCLE
+2016-11-09T22:28:05.030858+00:00 app[web.1]: npm ERR! Make sure you have the latest version of node.js and npm installed.
+2016-11-09T22:28:05.030981+00:00 app[web.1]: npm ERR! If you do, this is most likely a problem with the burger package,
+2016-11-09T22:28:05.031088+00:00 app[web.1]: npm ERR! not with npm itself.
+2016-11-09T22:28:05.031188+00:00 app[web.1]: npm ERR! Tell the author that this fails on your system:
+2016-11-09T22:28:05.031297+00:00 app[web.1]: npm ERR!     node server.js
+2016-11-09T22:28:05.031400+00:00 app[web.1]: npm ERR! You can get information on how to open an issue for this project with:
+2016-11-09T22:28:05.031510+00:00 app[web.1]: npm ERR!     npm bugs burger
+2016-11-09T22:28:05.031657+00:00 app[web.1]: npm ERR! Or if that isn't available, you can get their info via:
+2016-11-09T22:28:05.031806+00:00 app[web.1]: npm ERR!     npm owner ls burger
+2016-11-09T22:28:05.031953+00:00 app[web.1]: npm ERR! There is likely additional logging output above.
+2016-11-09T22:28:05.035118+00:00 app[web.1]:
+2016-11-09T22:28:05.035321+00:00 app[web.1]: npm ERR! Please include the following file with any support request:
+2016-11-09T22:28:05.035456+00:00 app[web.1]: npm ERR!     /app/npm-debug.log
+2016-11-09T22:28:05.017147+00:00 heroku[router]: at=error code=H13 desc="Connection closed without response" method=GET path="/" host=mighty-reaches-22169.herokuapp.com request_id=3e60fb6c-9608-4666-882b-be34c52d7f9e fwd="69.248.85.238" dyno=web.1 connect=4ms service=39ms status=503 bytes=0
+2016-11-09T22:28:05.116702+00:00 heroku[web.1]: State changed from up to crashed
+2016-11-09T22:28:05.117602+00:00 heroku[web.1]: State changed from crashed to starting
+2016-11-09T22:28:05.108311+00:00 heroku[web.1]: Process exited with status 1
+2016-11-09T22:28:06.917330+00:00 heroku[web.1]: Starting process with command `npm start`
+2016-11-09T22:28:09.632996+00:00 app[web.1]:
+2016-11-09T22:28:09.633008+00:00 app[web.1]: > burger@1.0.0 start /app
+2016-11-09T22:28:09.633009+00:00 app[web.1]: > node server.js
+2016-11-09T22:28:09.633010+00:00 app[web.1]:
+2016-11-09T22:28:10.419278+00:00 app[web.1]: connected as id 53883
+2016-11-09T22:28:10.614985+00:00 heroku[web.1]: State changed from starting to up
+2016-11-09T22:28:13.246962+00:00 heroku[router]: at=info method=GET path="/favicon.ico" host=mighty-reaches-22169.herokuapp.com request_id=96404cd5-769b-49c2-9d8c-13d6cbfeb779 fwd="69.248.85.238" dyno=web.1 connect=5000ms service=22ms status=404 bytes=222
+2016-11-09T22:29:16.905461+00:00 app[web.1]: /app/node_modules/mysql/lib/protocol/Parser.js:78
+2016-11-09T22:29:16.905471+00:00 app[web.1]:         throw err; // Rethrow non-MySQL errors
+2016-11-09T22:29:16.905472+00:00 app[web.1]:         ^
+2016-11-09T22:29:16.905472+00:00 app[web.1]:
+2016-11-09T22:29:16.905473+00:00 app[web.1]: Error: ER_NO_SUCH_TABLE: Table 'e9bn5t2j2f86mzqt.burgers' doesn't exist
+2016-11-09T22:29:16.905475+00:00 app[web.1]:     at Query.Sequence._packetToError (/app/node_modules/mysql/lib/protocol/sequences/Sequence.js:52:14)
+2016-11-09T22:29:16.905476+00:00 app[web.1]:     at Query.ErrorPacket (/app/node_modules/mysql/lib/protocol/sequences/Query.js:83:18)
+2016-11-09T22:29:16.905476+00:00 app[web.1]:     at Protocol._parsePacket (/app/node_modules/mysql/lib/protocol/Protocol.js:280:23)
+2016-11-09T22:29:16.905477+00:00 app[web.1]:     at Parser.write (/app/node_modules/mysql/lib/protocol/Parser.js:74:12)
+2016-11-09T22:29:16.905478+00:00 app[web.1]:     at Protocol.write (/app/node_modules/mysql/lib/protocol/Protocol.js:39:16)
+2016-11-09T22:29:16.905479+00:00 app[web.1]:     at Socket.<anonymous> (/app/node_modules/mysql/lib/Connection.js:109:28)
+2016-11-09T22:29:16.905479+00:00 app[web.1]:     at emitOne (events.js:90:13)
+2016-11-09T22:29:16.905480+00:00 app[web.1]:     at Socket.emit (events.js:182:7)
+2016-11-09T22:29:16.905480+00:00 app[web.1]:     at readableAddChunk (_stream_readable.js:153:18)
+2016-11-09T22:29:16.905481+00:00 app[web.1]:     at Socket.Readable.push (_stream_readable.js:111:10)
+2016-11-09T22:29:16.905482+00:00 app[web.1]:     at TCP.onread (net.js:534:20)
+2016-11-09T22:29:16.905483+00:00 app[web.1]:     --------------------
+2016-11-09T22:29:16.905483+00:00 app[web.1]:     at Protocol._enqueue (/app/node_modules/mysql/lib/protocol/Protocol.js:141:48)
+2016-11-09T22:29:16.905484+00:00 app[web.1]:     at Connection.query (/app/node_modules/mysql/lib/Connection.js:214:25)
+2016-11-09T22:29:16.905485+00:00 app[web.1]:     at Object.orm.selectAll (/app/config/orm.js:7:16)
+2016-11-09T22:29:16.905485+00:00 app[web.1]:     at Object.burger.selectAll (/app/models/burger.js:5:9)
+2016-11-09T22:29:16.905486+00:00 app[web.1]:     at /app/controllers/burgers_controller.js:12:10
+2016-11-09T22:29:16.905487+00:00 app[web.1]:     at Layer.handle [as handle_request] (/app/node_modules/express/lib/router/layer.js:95:5)
+2016-11-09T22:29:16.905487+00:00 app[web.1]:     at next (/app/node_modules/express/lib/router/route.js:131:13)
+2016-11-09T22:29:16.905488+00:00 app[web.1]:     at Route.dispatch (/app/node_modules/express/lib/router/route.js:112:3)
+2016-11-09T22:29:16.905489+00:00 app[web.1]:     at Layer.handle [as handle_request] (/app/node_modules/express/lib/router/layer.js:95:5)
+2016-11-09T22:29:16.905489+00:00 app[web.1]:     at /app/node_modules/express/lib/router/index.js:277:22
+2016-11-09T22:29:16.905490+00:00 app[web.1]:     at Function.process_params (/app/node_modules/express/lib/router/index.js:330:12)
+2016-11-09T22:29:16.905490+00:00 app[web.1]:     at next (/app/node_modules/express/lib/router/index.js:271:10)
+2016-11-09T22:29:16.905491+00:00 app[web.1]:     at Function.handle (/app/node_modules/express/lib/router/index.js:176:3)
+2016-11-09T22:29:16.905492+00:00 app[web.1]:     at router (/app/node_modules/express/lib/router/index.js:46:12)
+2016-11-09T22:29:16.905492+00:00 app[web.1]:     at Layer.handle [as handle_request] (/app/node_modules/express/lib/router/layer.js:95:5)
+2016-11-09T22:29:16.905496+00:00 app[web.1]:     at trim_prefix (/app/node_modules/express/lib/router/index.js:312:13)
+2016-11-09T22:29:16.922279+00:00 app[web.1]:
+2016-11-09T22:29:16.931678+00:00 app[web.1]: npm ERR! Linux 3.13.0-100-generic
+2016-11-09T22:29:16.932047+00:00 app[web.1]: npm ERR! argv "/app/.heroku/node/bin/node" "/app/.heroku/node/bin/npm" "start"
+2016-11-09T22:29:16.932278+00:00 app[web.1]: npm ERR! node v5.11.1
+2016-11-09T22:29:16.932880+00:00 app[web.1]: npm ERR! npm  v3.8.6
+2016-11-09T22:29:16.933128+00:00 app[web.1]: npm ERR! code ELIFECYCLE
+2016-11-09T22:29:16.933313+00:00 app[web.1]: npm ERR! burger@1.0.0 start: `node server.js`
+2016-11-09T22:29:16.933504+00:00 app[web.1]: npm ERR! Exit status 1
+2016-11-09T22:29:16.933703+00:00 app[web.1]: npm ERR!
+2016-11-09T22:29:16.933886+00:00 app[web.1]: npm ERR! Failed at the burger@1.0.0 start script 'node server.js'.
+2016-11-09T22:29:16.934175+00:00 app[web.1]: npm ERR! Make sure you have the latest version of node.js and npm installed.
+2016-11-09T22:29:16.934348+00:00 app[web.1]: npm ERR! If you do, this is most likely a problem with the burger package,
+2016-11-09T22:29:16.934560+00:00 app[web.1]: npm ERR! not with npm itself.
+2016-11-09T22:29:16.934805+00:00 app[web.1]: npm ERR! Tell the author that this fails on your system:
+2016-11-09T22:29:16.934923+00:00 app[web.1]: npm ERR!     node server.js
+2016-11-09T22:29:16.935029+00:00 app[web.1]: npm ERR! You can get information on how to open an issue for this project with:
+2016-11-09T22:29:16.935133+00:00 app[web.1]: npm ERR!     npm bugs burger
+2016-11-09T22:29:16.935231+00:00 app[web.1]: npm ERR! Or if that isn't available, you can get their info via:
+2016-11-09T22:29:16.935333+00:00 app[web.1]: npm ERR!     npm owner ls burger
+2016-11-09T22:29:16.935436+00:00 app[web.1]: npm ERR! There is likely additional logging output above.
+2016-11-09T22:29:16.939974+00:00 app[web.1]:
+2016-11-09T22:29:16.940247+00:00 app[web.1]: npm ERR! Please include the following file with any support request:
+2016-11-09T22:29:16.940411+00:00 app[web.1]: npm ERR!     /app/npm-debug.log
+2016-11-09T22:29:16.920894+00:00 heroku[router]: at=error code=H13 desc="Connection closed without response" method=GET path="/" host=mighty-reaches-22169.herokuapp.com request_id=6937c6f6-221c-4922-8301-008d4c574da8 fwd="69.248.85.238" dyno=web.1 connect=0ms service=33ms status=503 bytes=0
+2016-11-09T22:29:17.021487+00:00 heroku[web.1]: State changed from up to crashed
+2016-11-09T22:29:17.006360+00:00 heroku[web.1]: Process exited with status 1
